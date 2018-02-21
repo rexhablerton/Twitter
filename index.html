@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>Tweet</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="loginstyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+	<!-- ui router -->
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+
+</head>
+<body ng-app="app" ng-controller = "mainController as vm" >
+	<div id="parent">
+		<header>
+			<div class="box menu">
+				<nav>
+					<a ui-sref="home">
+						<i class="fa fa-home"></i>
+					 	<span>Home</span>
+					</a>
+					<a ui-sref="login">
+						<i class="fa fa-bell"></i>
+						<span>Notification</span>
+					</a>
+
+					<a ui-sref="Messages">
+						<i class="fa fa-envelope"></i>
+						<span>Messages</span>
+					</a>
+				</nav>
+
+			</div>
+			<div class="box tweet">
+				<img src="images/logo1.png">
+			</div>
+			<div class="box search">
+				<input type="text" name="search" placeholder="search">
+				<img src="images/profil.jpg">
+				<button>Tweet</button>
+			</div>
+		</header>
+
+
+		<div class="container1">
+		    <div ui-view></div>
+		</div>
+
+</div>
+	
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+

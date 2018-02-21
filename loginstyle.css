@@ -1,0 +1,40 @@
+.login-wrap{
+    margin-top: 10%;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: auto;
+    width: 30%;
+    padding: 10px;
+
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+
+}
+
+h2{
+  color:  DodgerBlue;
+  text-shadow: 1px 1px 10px DodgerBlue;
+  text-align: left;
+  margin-left: 20px; 
+}
+
+.form input{
+  padding: 20px;
+  margin: 5px;
+}
+
+.form button{
+  border-radius: 20px;
+  background: DodgerBlue;
+  color: white;
+  font-size: 20px;
+  text-shadow: 1px 1px 10px white;
+  margin: 5px;
+  width: 30%;
+  padding: 20px;
+  outline: none;
+
+}

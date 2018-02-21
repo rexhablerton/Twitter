@@ -1,0 +1,144 @@
+<div class="container">
+
+		<div class="box-1 sm-radius" >
+			<div class="togr">
+				<div class="cover">
+					<img src="images/profil.jpg" width="100%" height="250px;">
+				</div>
+
+				<div class="tog">
+					<div class="profile">
+						<img src="images/profil.jpg" >
+					</div>
+				
+					<div class="tog1">
+						<a href="#">Blerton</a>
+						<p>@blertonrexha</p>
+					</div>
+				</div>
+				<div class="togf">
+					<div>Tweets <p>234</p></div>
+					<div>Followers <p>234</p></div>
+					<div>Following <p>234</p></div>
+				</div>
+			</div>
+			<div class="tog2 sm-radius">
+
+				<div class="tog21">
+					<b>Trends for you</b>
+					<a href="#">change</a>
+
+				</div>
+				<div class="Trends">
+
+					<a href="#">
+						<span class="tag">#Merry Christmas</span>
+						<p>1,736 Tweets</p>
+						
+					</a>					
+					<a href="#">
+						<span>#Merry Christmas</span>
+							<p>1,736 Tweets</p>
+					</a>
+					<a href="#">
+						<span>#Merry Christmas</span>
+						<p>1,736 Tweets</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+
+
+
+<!-- box 2 -->
+		
+
+
+			<div class="box-2 sm-radius">
+				<div class="inputi">
+					<form class="inputform">
+						<div class="pi"><img src="images/profil.jpg"></div>
+						<div class="cm">
+							<input type="text" name="comment" ng-model="vm.wm">
+							<button type="submit" ng-click="vm.addC(vm.wm)"> Submit </button>
+						</div>
+						
+					</form>
+				</div>
+				<div class="commentall" ng-repeat="data in vm.Woym | orderBy: '-created_at':true" >
+					<div class="comment sm-radius" >
+						<div class="comment1">
+							<div>
+								<img src="images/profil.jpg">
+							</div>
+							<div class="comment2">
+								<div>
+									<b>Blerton Rexha</b> <i>@blertonrexha</i><br>
+									
+								</div>
+								<div class="data">{{data}}</div>
+
+								<div class="icon">
+
+									<span class="fa fa-gittip"></span>
+									<span class="fa fa-dashcube"></span>
+									<span class="fa fa-meh-o"></span>
+								</div>
+							</div>
+							
+						</div>							
+						<div class="delete">
+							<span class="sm-radius fa fa-close" ng-click="vm.remove(data)"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+
+
+	<!-- box 3 -->
+
+			<div class="box-3 sm-radius">
+				<div class="b3t">
+					<div class="b3t1">
+						<div class="whotofollow">
+							<a href="#"><span>Who to follow</span></a></div>
+						<div class="Refresh">
+							<a href="#"><span>Refresh</span></a></div>
+						<div class="viewall">
+							<a href="#"><span>View all</span></a></div>
+					</div>
+					<div class="b3t2">
+						<div class="b3t21">
+							<div >
+								<img src="images/profil.jpg">
+							</div>
+							<div>
+								<a> SomeGuy </a>@Mergimbajra
+								<p><button> Follow </button></p>
+							</div>
+						</div>
+						<div class="b3t21">
+							<div>
+								<img src="images/profil.jpg">
+							</div>
+							<div>
+								<a> SomeGirl</a>@Name
+								<p><button> Follow </button></p>
+							</div>
+						</div>
+						<div class="b3t21">
+							<div>
+								<img src="images/profil.jpg">
+							</div>
+							<div>
+								<a> SomeGirl</a>@Name
+								<p><button> Follow </button></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
